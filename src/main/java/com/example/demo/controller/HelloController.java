@@ -19,6 +19,7 @@ public class HelloController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
     public String hello(@RequestParam String name) {
+        System.out.println("hello " + name);
         return "Hello " + name;
     }
 }
